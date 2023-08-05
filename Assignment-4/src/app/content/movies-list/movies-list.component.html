@@ -1,1 +1,24 @@
-<p>movies-list works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">genre</th>
+        <th scope="col">running_time</th>
+        <th scope="col">release_date</th>
+        <th scope="col">ratings</th>
+        <th scope="col">age_restriction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <tr *ngFor="let movie of movies">
+            <td>{{ movie.name }}</td>
+            <td>{{ movie.genre }}</td>
+            <td>{{ movie.running_time }}</td>
+            <td>{{ movie.release_date }}</td>
+            <td>{{ movie.ratings }}</td>
+            <td>{{ movie.age_restriction }}</td>
+      </tr>
+  
+    </tbody>
+  </table>

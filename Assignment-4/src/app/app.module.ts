@@ -10,6 +10,7 @@ import { ContentComponent } from './content/content.component';
 import { MoviesListComponent } from './content/movies-list/movies-list.component';
 import { RoomsComponent } from './content/rooms/rooms.component';
 import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutingModule here
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutin
     FooterComponent,
     ContentComponent,
     MoviesListComponent,
-    RoomsComponent
+    RoomsComponent,
+   
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule], // Add the AppRoutingModule to the imports array
+  imports: [BrowserModule, FormsModule, AppRoutingModule,HttpClientModule], // Add the AppRoutingModule to the imports array
   providers: [DatePipe],
   bootstrap: [AppComponent],
 })
