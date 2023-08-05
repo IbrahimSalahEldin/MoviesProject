@@ -1,10 +1,19 @@
-.moviesList{
+.moviesList {
+    padding-top: 10px;
     width: 50%;
     height: 50px;
     background-color: white;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.containButtons{
+
+.containButtons {
     justify-content: center;
+}
+.btnmovie{
+    background-color: white;
+    border: none;
+}
+/* Add the blue bottom border to the active button */
+.nav-link.active .moviesList {
+    border-bottom: 3px solid rgb(159, 159, 234);
 }

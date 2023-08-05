@@ -1,6 +1,9 @@
+
 import { Component, OnInit } from '@angular/core';
 // import { movies } from '../../../assets/movies.json';  
 import { HttpClient } from '@angular/common/http';
+
+
 
 
 @Component({
