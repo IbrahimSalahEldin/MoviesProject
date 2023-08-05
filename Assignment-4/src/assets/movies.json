@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Movie 1",
+    "genre": "Action",
+    "running_time": "2h 15m",
+    "release_date": "2022-01-15",
+    "ratings": 7.8,
+    "age_restriction": "PG-13"
+  },
+  {
+    "name": "Movie 2",
+    "genre": "Comedy",
+    "running_time": "1h 50m",
+    "release_date": "2021-07-23",
+    "ratings": 6.5,
+    "age_restriction": "PG"
+  },
+  {
+    "name": "Movie 3",
+    "genre": "Drama",
+    "running_time": "2h 5m",
+    "release_date": "2020-11-05",
+    "ratings": 8.2,
+    "age_restriction": "R"
+  },
+  {
+    "name": "Movie 4",
+    "genre": "Sci-Fi",
+    "running_time": "2h 30m",
+    "release_date": "2023-03-10",
+    "ratings": 8.9,
+    "age_restriction": "PG-13"
+  },
+  {
+    "name": "Movie 5",
+    "genre": "Horror",
+    "running_time": "1h 45m",
+    "release_date": "2022-09-02",
+    "ratings": 7.1,
+    "age_restriction": "R"
+  },
+  {
+    "name": "Movie 6",
+    "genre": "Adventure",
+    "running_time": "2h 10m",
+    "release_date": "2023-06-28",
+    "ratings": 9.0,
+    "age_restriction": "PG"
+  }
+]
