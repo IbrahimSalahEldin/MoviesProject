@@ -13,6 +13,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MoviesListComponent implements OnInit {
     movies: any;
+   
 
   constructor(private http: HttpClient) {}
   ngOnInit() {
