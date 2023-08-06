@@ -1,24 +1,36 @@
 <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">genre</th>
-        <th scope="col">running_time</th>
-        <th scope="col">release_date</th>
-        <th scope="col">ratings</th>
-        <th scope="col">age_restriction</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <tr *ngFor="let movie of movies">
-            <td class="bc">{{ movie.name }}</td>
-            <td>{{ movie.genre }}</td>
-            <td>{{ movie.running_time }}</td>
-            <td>{{ movie.release_date }}</td>
-            <td>{{ movie.ratings }}</td>
-            <td>{{ movie.age_restriction }}</td>
-      </tr>
-  
-    </tbody>
-  </table>
+
+  <thead>
+    <tr class="blue-background">
+      <th scope="col">Movie Name</th>
+      <th scope="col">Genre</th>
+      <th scope="col">Running time</th>
+      <th scope="col">Date of Release</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Restrictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let movie of movies; let odd = odd">
+      <td [class.green-background]="odd" [class.red-background]="!odd">
+        {{ movie.name }}
+      </td>
+      <td [class.green-background]="odd" [class.red-background]="!odd">
+        {{ movie.genre }}
+      </td>
+      <td [class.green-background]="odd" [class.red-background]="!odd">
+        {{ movie.running_time }}
+      </td>
+      <td [class.green-background]="odd" [class.red-background]="!odd">
+        {{ movie.release_date }}
+      </td>
+      <td [class.green-background]="odd" [class.red-background]="!odd">
+        {{ movie.ratings }}
+      </td>
+      <td [class.green-background]="odd" [class.red-background]="!odd">
+        {{ movie.age_restriction }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
