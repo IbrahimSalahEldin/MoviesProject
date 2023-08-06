@@ -1,6 +1,6 @@
  [
   {
-    "name": "Movie 1",
+    "name": "War",
     "genre": "Action",
     "running_time": "2h 15m",
     "release_date": "2022-01-15",
@@ -8,7 +8,7 @@
     "age_restriction": "PG-13"
   },
   {
-    "name": "Movie 2",
+    "name": "KingDom",
     "genre": "Comedy",
     "running_time": "1h 50m",
     "release_date": "2021-07-23",
@@ -16,7 +16,7 @@
     "age_restriction": "PG"
   },
   {
-    "name": "Movie 3",
+    "name": "Lion",
     "genre": "Drama",
     "running_time": "2h 5m",
     "release_date": "2020-11-05",
@@ -24,7 +24,7 @@
     "age_restriction": "R"
   },
   {
-    "name": "Movie 4",
+    "name": "skySkaing",
     "genre": "Sci-Fi",
     "running_time": "2h 30m",
     "release_date": "2023-03-10",
@@ -32,7 +32,7 @@
     "age_restriction": "PG-13"
   },
   {
-    "name": "Movie 5",
+    "name": "mumm",
     "genre": "Horror",
     "running_time": "1h 45m",
     "release_date": "2022-09-02",
@@ -40,11 +40,27 @@
     "age_restriction": "R"
   },
   {
-    "name": "Movie 6",
+    "name": "jumanji",
     "genre": "Adventure",
     "running_time": "2h 10m",
     "release_date": "2023-06-28",
     "ratings": 9.0,
+    "age_restriction": "PG"
+  },
+  {
+    "name": "Evil_Man",
+    "genre": "Horror",
+    "running_time": "1h 45m",
+    "release_date": "2022-09-02",
+    "ratings": 6.1,
+    "age_restriction": "R"
+  },
+  {
+    "name": "jumanji2",
+    "genre": "Adventure",
+    "running_time": "2h 10m",
+    "release_date": "2023-06-28",
+    "ratings": 9.5,
     "age_restriction": "PG"
   }
 ]
