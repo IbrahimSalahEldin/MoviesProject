@@ -1,36 +1,27 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-rooms',
+  selector: 'app-my-component',
   templateUrl: './rooms.component.html',
-  styleUrls: ['./rooms.component.scss']
+  styleUrls: ['./rooms.component.css']
 })
+export class rooms implements OnInit {
+  movies: string[] = ["movie1", "movie2", "movie3", "movie4", "movie5"];
+  data: string[] = [];
 
-export class RoomsComponent {
-  movies: any;
-  data:any;
-  constructor(private http: HttpClient) {}
   ngOnInit() {
-    this.http.get('assets/movies.json').subscribe((data: any) => {
-
-      this.movies= data;
-      // console.log(data); 
-    });
+    this.retrieveData();
   }
 
-  Room( room1:number){
-    
-  const newArr=[...this.movies];
-  this.RandomMovies(newArr);
-  const res=newArr.slice(0,room1);
-  this.data=res;
-  console.log(this.data);
-  }
-  RandomMovies(moviesData:any[]){
-    for(let i=moviesData.length;i>0;i--) {
-    const roomsRandom =Math.floor(Math.random()*(i+1));
-[moviesData[i],moviesData[roomsRandom]]=[moviesData[roomsRandom],moviesData[i]]
+  retrieveData() {
+    for (let i = 0; i < this.movies.length; i++) {
+      this.data.push(this.movies[i]);
+      if (i === 2) {
+        break;
+      }
     }
+
+    console.log(this.data);
+    console.log(this.data[1]);
   }
 }
