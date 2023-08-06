@@ -1,0 +1,26 @@
+/* Styling for the table header (thead) */
+.blue-background {
+    background-color: rgb(5, 5, 111);
+    color: white; /* Font color white */
+    font-size: 14px;
+  }
+  
+  /* Styling for odd rows in the table body (tbody) */
+  .green-background {
+    background-color: rgb(150, 84, 185);
+    color: white; /* Font color white */
+    font-size: 13px;
+  }
+  
+  /* Styling for even rows in the table body (tbody) */
+  .red-background {
+    background-color:rgb(5, 5, 111) ;
+    color: white; /* Font color white */
+    font-size: 13px;
+  }
+  
+  /* Border for all cells (td) */
+  td {
+    border: 1px solid white;
+  }
+  
