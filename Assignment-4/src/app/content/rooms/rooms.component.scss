@@ -1,9 +1,17 @@
 .RoomB{
     width: 80px;
     height: 35px;
-    background-color: rgb(50, 50, 172);
+    background-color: #3e5cb8;
     color: white;
     border: none;
     border-radius: 3px;
     margin: 2px;
 }
+.blue-background {
+    background-color: rgb(5, 5, 111);
+    color: white; /* Font color white */
+    font-size: 14px;
+  }
+  td {
+    border: 1px solid white;
+  }

@@ -1,15 +1,48 @@
 <div class="d-flex justify-content-center">
-<<<<<<< HEAD
-    <button class="RoomB" (click)="retrieveData()" >Room1</button>
-    <button class="RoomB" >Room2</button>
-    <button class="RoomB" >Room3</button>
-    <button class="RoomB" >Room4</button>
-=======
 
-    <button class="RoomB" (click)="Rome1()">Room1</button>
-    <button class="RoomB" (click)="Rome2()">Room2</button>
-    <button class="RoomB" (click)="Rome3()">Room3</button>
-    <button class="RoomB" (click)="Rome4()">Room4</button>
 
->>>>>>> 1e14e85f6b1a14b9797ab6ab83bbf4de1fb27b0f
+    <button class="RoomB" (click)="Room1()">Room1</button>
+    <button class="RoomB" (click)="Room2()">Room2</button>
+    <button class="RoomB" (click)="Room3()">Room3</button>
+    <button class="RoomB" (click)="Room4()">Room4</button>
+
+</div>
+
+<div class="container " >
+<div class="justify-content-center d-flex ">
+    <p class="fs-5 fw-bold" style="color:  #3e5cb8;">Room {{data[2].number}} movies show time</p>
+</div>
+
+
+<table class="table blue-background ">
+
+    <thead >
+      <tr class="blue-background">
+        <th scope="col " class="p-3">Room Number</th>
+        <th scope="col" class="p-3">Movie Name</th>
+        <th scope="col" class="p-3">Show Time</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+       
+            <ng-container *ngFor="let movie of data; let i = index">
+              <ng-container *ngIf="i < data.length - 1">
+                <tr>
+                  <td>
+                    {{ data[2].number }}
+                  </td>
+                  <td>
+                    {{ movie.name }}
+                  </td>
+                  <td>
+                    {{ movie.running_time }}
+                  </td>
+                </tr>
+              </ng-container>
+            </ng-container>
+        
+          
+    </tbody>
+  </table>
 </div>

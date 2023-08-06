@@ -9,7 +9,8 @@ const routes: Routes = [
   {
     path: '',component: ContentComponent,children: [
       { path: 'movies-list', component: MoviesListComponent },
-      { path: 'rooms', component: RoomsComponent }
+      { path: 'rooms', component: RoomsComponent },
+      {path: '',component: MoviesListComponent}
     ]
   },
   // Add a wildcard route to redirect to ContentComponent in case of an invalid route

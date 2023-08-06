@@ -14,6 +14,9 @@
     border: none;
 }
 /* Add the blue bottom border to the active button */
-.nav-link.active .moviesList {
-    border-bottom: 3px solid rgb(159, 159, 234);
-}
+
+/* Assuming the button has a height, set the bottom border to a few pixels height */
+.active-link {
+    border-bottom: 3px solid #3e5cb8; /* You can customize the color and size as needed */
+  }
+  
