@@ -9,7 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { ContentComponent } from './content/content.component';
 import { MoviesListComponent } from './content/movies-list/movies-list.component';
 import { RoomsComponent } from './content/rooms/rooms.component';
-import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutingModule here
+import { AppRoutingModule } from './app-routing.module';
+import { SingleroomComponent } from './content/Rooms/singleroom/singleroom.component'; // Import the AppRoutingModule here
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module'; // Import the AppRoutin
     FooterComponent,
     ContentComponent,
     MoviesListComponent,
-    RoomsComponent
+    RoomsComponent,
+    SingleroomComponent
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule], // Add the AppRoutingModule to the imports array
   providers: [DatePipe],

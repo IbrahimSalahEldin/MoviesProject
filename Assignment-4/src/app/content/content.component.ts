@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent {
-
+  activeButton: string = 'movies';
+  setActiveButton(button: string) {
+    this.activeButton = button;
+  }
 }
