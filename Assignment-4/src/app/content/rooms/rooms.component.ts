@@ -1,27 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-my-component',
+  selector: 'app-rooms',
   templateUrl: './rooms.component.html',
-  styleUrls: ['./rooms.component.css']
+  styleUrls: ['./rooms.component.scss']
 })
-export class rooms implements OnInit {
-  movies: string[] = ["movie1", "movie2", "movie3", "movie4", "movie5"];
-  data: string[] = [];
 
+export class RoomsComponent {
+  movies: any;
+  data:any;
+  constructor(private http: HttpClient) {}
   ngOnInit() {
-    this.retrieveData();
+    this.http.get('assets/movies.json').subscribe((data: any) => {
+
+      this.movies= data;
+      // console.log(data); 
+    });
   }
 
-  retrieveData() {
-    for (let i = 0; i < this.movies.length; i++) {
-      this.data.push(this.movies[i]);
-      if (i === 2) {
-        break;
-      }
-    }
+  room1(){
 
-    console.log(this.data);
-    console.log(this.data[1]);
   }
+ 
+  
 }
